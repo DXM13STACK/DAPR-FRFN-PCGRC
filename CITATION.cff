@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript."
+title: "Distribution-Aware Feature Refinement and Prediction-Guided Structural Correction for Industrial Surface Defect Segmentation"
+type: software
+authors:
+  - family-names: Du
+    given-names: Xianjun
+  - family-names: Du
+    given-names: Xinmin
+  - family-names: Li
+    given-names: Haijun
+  - family-names: Lin
+    given-names: Junjian
+repository-code: "https://github.com/DXM13STACK/DAPR-FRFN-PCGRC"
+license: Apache-2.0

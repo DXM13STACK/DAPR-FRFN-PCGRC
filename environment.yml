@@ -1,0 +1,20 @@
+name: dapr-frfn-pcgrc
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.1.0
+  - pytorch-cuda=12.1
+  - pip
+  - pip:
+      - mmengine==0.10.7
+      - mmsegmentation==1.2.2
+      - numpy==1.26.4
+      - opencv-python==4.10.0.84
+      - PyYAML==6.0.2
+      - matplotlib
+      - prettytable
+      - scipy
+      - ftfy>=6.1

@@ -1,0 +1,249 @@
+
+============================================================
+MODEL: DeepLabV3+-R50
+CONFIG: projects/industrial_defect_seg/configs/ksdd2/deeplabv3plus_r50_ksdd2_20k.py
+============================================================
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/backbones/resnet.py:431: UserWarning: DeprecationWarning: pretrained is a deprecated, please use "init_cfg" instead
+  warnings.warn('DeprecationWarning: pretrained is a deprecated, '
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/decode_heads/decode_head.py:120: UserWarning: For binary segmentation, we suggest using`out_channels = 1` to define the outputchannels of segmentor, and use `threshold`to convert `seg_logits` into a predictionapplying a threshold
+  warnings.warn('For binary segmentation, we suggest using'
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/builder.py:36: UserWarning: ``build_loss`` would be deprecated soon, please use ``mmseg.registry.MODELS.build()`` 
+  warnings.warn('``build_loss`` would be deprecated soon, please use '
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/losses/cross_entropy_loss.py:250: UserWarning: Default ``avg_non_ignore`` is False, if you would like to ignore the certain label and average loss over non-ignore labels, which is the same with PyTorch official cross_entropy, set ``avg_non_ignore=True``.
+  warnings.warn(
+10/07 10:18:18 - mmengine - WARNING - Unsupported operator aten::max_pool2d encountered 1 time(s)
+10/07 10:18:18 - mmengine - WARNING - Unsupported operator aten::add_ encountered 16 time(s)
+10/07 10:18:18 - mmengine - WARNING - Unsupported operator aten::feature_dropout encountered 1 time(s)
+10/07 10:18:18 - mmengine - WARNING - The following submodules of the model were never called during the trace of the graph. They may be unused, or they were accessed by direct calls to .forward() or via other python methods. In the latter case they will have zeros for statistics, though their statistics will still contribute to their parent calling module.
+data_preprocessor, decode_head.loss_decode
+10/07 10:18:18 - mmengine - WARNING - Unsupported operator aten::batch_norm encountered 69 time(s)
+10/07 10:18:18 - mmengine - WARNING - Unsupported operator aten::adaptive_avg_pool2d encountered 1 time(s)
+10/07 10:18:18 - mmengine - WARNING - Unsupported operator aten::upsample_bilinear2d encountered 2 time(s)
+==============================
+Compute type: direct: randomly generate a picture
+Input shape: (256, 640)
+Flops: 0.11T
+Params: 41.216M
+==============================
+!!!Please be cautious if you use the results in papers. You may need to check if all ops are supported and verify that the flops computation is correct.
+
+============================================================
+MODEL: SegNeXt-T
+CONFIG: projects/industrial_defect_seg/configs/ksdd2/segnext_t_ksdd2_20k.py
+============================================================
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/decode_heads/decode_head.py:120: UserWarning: For binary segmentation, we suggest using`out_channels = 1` to define the outputchannels of segmentor, and use `threshold`to convert `seg_logits` into a predictionapplying a threshold
+  warnings.warn('For binary segmentation, we suggest using'
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/builder.py:36: UserWarning: ``build_loss`` would be deprecated soon, please use ``mmseg.registry.MODELS.build()`` 
+  warnings.warn('``build_loss`` would be deprecated soon, please use '
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/losses/cross_entropy_loss.py:250: UserWarning: Default ``avg_non_ignore`` is False, if you would like to ignore the certain label and average loss over non-ignore labels, which is the same with PyTorch official cross_entropy, set ``avg_non_ignore=True``.
+  warnings.warn(
+10/07 10:18:22 - mmengine - WARNING - Unsupported operator aten::gelu encountered 27 time(s)
+10/07 10:18:22 - mmengine - WARNING - Unsupported operator aten::clone encountered 26 time(s)
+10/07 10:18:22 - mmengine - WARNING - Unsupported operator aten::add encountered 94 time(s)
+10/07 10:18:22 - mmengine - WARNING - Unsupported operator aten::mul encountered 58 time(s)
+10/07 10:18:22 - mmengine - WARNING - Unsupported operator aten::rand encountered 1 time(s)
+10/07 10:18:22 - mmengine - WARNING - Unsupported operator aten::linalg_vector_norm encountered 1 time(s)
+10/07 10:18:22 - mmengine - WARNING - Unsupported operator aten::clamp_min encountered 1 time(s)
+10/07 10:18:22 - mmengine - WARNING - Unsupported operator aten::expand_as encountered 1 time(s)
+10/07 10:18:22 - mmengine - WARNING - Unsupported operator aten::div encountered 16 time(s)
+10/07 10:18:22 - mmengine - WARNING - Unsupported operator aten::softmax encountered 1 time(s)
+10/07 10:18:22 - mmengine - WARNING - Unsupported operator aten::feature_dropout encountered 1 time(s)
+10/07 10:18:22 - mmengine - WARNING - The following submodules of the model were never called during the trace of the graph. They may be unused, or they were accessed by direct calls to .forward() or via other python methods. In the latter case they will have zeros for statistics, though their statistics will still contribute to their parent calling module.
+backbone.block1.1.drop_path, backbone.block1.2.drop_path, backbone.block2.0.drop_path, backbone.block2.1.drop_path, backbone.block2.2.drop_path, backbone.block3.0.drop_path, backbone.block3.1.drop_path, backbone.block3.2.drop_path, backbone.block3.3.drop_path, backbone.block3.4.drop_path, backbone.block4.0.drop_path, backbone.block4.1.drop_path, data_preprocessor, decode_head.loss_decode
+10/07 10:18:23 - mmengine - WARNING - Unsupported operator aten::batch_norm encountered 31 time(s)
+10/07 10:18:23 - mmengine - WARNING - Unsupported operator aten::layer_norm encountered 4 time(s)
+10/07 10:18:23 - mmengine - WARNING - Unsupported operator aten::upsample_bilinear2d encountered 3 time(s)
+10/07 10:18:23 - mmengine - WARNING - Unsupported operator aten::group_norm encountered 3 time(s)
+==============================
+Compute type: direct: randomly generate a picture
+Input shape: (256, 640)
+Flops: 3.935G
+Params: 4.225M
+==============================
+!!!Please be cautious if you use the results in papers. You may need to check if all ops are supported and verify that the flops computation is correct.
+
+============================================================
+MODEL: SegFormer-B0
+CONFIG: projects/industrial_defect_seg/configs/ksdd2/segformer_mit-b0_ksdd2_20k.py
+============================================================
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/decode_heads/decode_head.py:120: UserWarning: For binary segmentation, we suggest using`out_channels = 1` to define the outputchannels of segmentor, and use `threshold`to convert `seg_logits` into a predictionapplying a threshold
+  warnings.warn('For binary segmentation, we suggest using'
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/builder.py:36: UserWarning: ``build_loss`` would be deprecated soon, please use ``mmseg.registry.MODELS.build()`` 
+  warnings.warn('``build_loss`` would be deprecated soon, please use '
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/losses/cross_entropy_loss.py:250: UserWarning: Default ``avg_non_ignore`` is False, if you would like to ignore the certain label and average loss over non-ignore labels, which is the same with PyTorch official cross_entropy, set ``avg_non_ignore=True``.
+  warnings.warn(
+10/07 10:18:27 - mmengine - WARNING - Unsupported operator aten::div encountered 16 time(s)
+10/07 10:18:27 - mmengine - WARNING - Unsupported operator aten::mul encountered 48 time(s)
+10/07 10:18:27 - mmengine - WARNING - Unsupported operator aten::unflatten encountered 8 time(s)
+10/07 10:18:27 - mmengine - WARNING - Unsupported operator aten::softmax encountered 8 time(s)
+10/07 10:18:27 - mmengine - WARNING - Unsupported operator aten::add encountered 16 time(s)
+10/07 10:18:27 - mmengine - WARNING - Unsupported operator aten::gelu encountered 8 time(s)
+10/07 10:18:27 - mmengine - WARNING - Unsupported operator aten::feature_dropout encountered 1 time(s)
+10/07 10:18:27 - mmengine - WARNING - The following submodules of the model were never called during the trace of the graph. They may be unused, or they were accessed by direct calls to .forward() or via other python methods. In the latter case they will have zeros for statistics, though their statistics will still contribute to their parent calling module.
+backbone.layers.0.1.0.attn.attn.out_proj, backbone.layers.0.1.0.attn.dropout_layer, backbone.layers.0.1.0.ffn.dropout_layer, backbone.layers.0.1.1.attn.attn.out_proj, backbone.layers.0.1.1.attn.dropout_layer, backbone.layers.0.1.1.ffn.dropout_layer, backbone.layers.1.1.0.attn.attn.out_proj, backbone.layers.1.1.0.attn.dropout_layer, backbone.layers.1.1.0.ffn.dropout_layer, backbone.layers.1.1.1.attn.attn.out_proj, backbone.layers.1.1.1.attn.dropout_layer, backbone.layers.1.1.1.ffn.dropout_layer, backbone.layers.2.1.0.attn.attn.out_proj, backbone.layers.2.1.0.attn.dropout_layer, backbone.layers.2.1.0.ffn.dropout_layer, backbone.layers.2.1.1.attn.attn.out_proj, backbone.layers.2.1.1.attn.dropout_layer, backbone.layers.2.1.1.ffn.dropout_layer, backbone.layers.3.1.0.attn.attn.out_proj, backbone.layers.3.1.0.attn.dropout_layer, backbone.layers.3.1.0.ffn.dropout_layer, backbone.layers.3.1.1.attn.attn.out_proj, backbone.layers.3.1.1.attn.dropout_layer, backbone.layers.3.1.1.ffn.dropout_layer, data_preprocessor, decode_head.loss_decode
+10/07 10:18:27 - mmengine - WARNING - Unsupported operator aten::layer_norm encountered 30 time(s)
+10/07 10:18:27 - mmengine - WARNING - Unsupported operator aten::batch_norm encountered 5 time(s)
+10/07 10:18:27 - mmengine - WARNING - Unsupported operator aten::upsample_bilinear2d encountered 4 time(s)
+==============================
+Compute type: direct: randomly generate a picture
+Input shape: (256, 640)
+Flops: 4.684G
+Params: 3.716M
+==============================
+!!!Please be cautious if you use the results in papers. You may need to check if all ops are supported and verify that the flops computation is correct.
+
+============================================================
+MODEL: SegFormer-B1
+CONFIG: work_dirs/segformer_mit-b1_ksdd2_20k/segformer_mit-b1_ksdd2_20k.py
+============================================================
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/decode_heads/decode_head.py:120: UserWarning: For binary segmentation, we suggest using`out_channels = 1` to define the outputchannels of segmentor, and use `threshold`to convert `seg_logits` into a predictionapplying a threshold
+  warnings.warn('For binary segmentation, we suggest using'
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/builder.py:36: UserWarning: ``build_loss`` would be deprecated soon, please use ``mmseg.registry.MODELS.build()`` 
+  warnings.warn('``build_loss`` would be deprecated soon, please use '
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/losses/cross_entropy_loss.py:250: UserWarning: Default ``avg_non_ignore`` is False, if you would like to ignore the certain label and average loss over non-ignore labels, which is the same with PyTorch official cross_entropy, set ``avg_non_ignore=True``.
+  warnings.warn(
+10/07 10:18:31 - mmengine - WARNING - Unsupported operator aten::div encountered 16 time(s)
+10/07 10:18:31 - mmengine - WARNING - Unsupported operator aten::mul encountered 48 time(s)
+10/07 10:18:31 - mmengine - WARNING - Unsupported operator aten::unflatten encountered 8 time(s)
+10/07 10:18:31 - mmengine - WARNING - Unsupported operator aten::softmax encountered 8 time(s)
+10/07 10:18:31 - mmengine - WARNING - Unsupported operator aten::add encountered 16 time(s)
+10/07 10:18:31 - mmengine - WARNING - Unsupported operator aten::gelu encountered 8 time(s)
+10/07 10:18:31 - mmengine - WARNING - Unsupported operator aten::feature_dropout encountered 1 time(s)
+10/07 10:18:31 - mmengine - WARNING - The following submodules of the model were never called during the trace of the graph. They may be unused, or they were accessed by direct calls to .forward() or via other python methods. In the latter case they will have zeros for statistics, though their statistics will still contribute to their parent calling module.
+backbone.layers.0.1.0.attn.attn.out_proj, backbone.layers.0.1.0.attn.dropout_layer, backbone.layers.0.1.0.ffn.dropout_layer, backbone.layers.0.1.1.attn.attn.out_proj, backbone.layers.0.1.1.attn.dropout_layer, backbone.layers.0.1.1.ffn.dropout_layer, backbone.layers.1.1.0.attn.attn.out_proj, backbone.layers.1.1.0.attn.dropout_layer, backbone.layers.1.1.0.ffn.dropout_layer, backbone.layers.1.1.1.attn.attn.out_proj, backbone.layers.1.1.1.attn.dropout_layer, backbone.layers.1.1.1.ffn.dropout_layer, backbone.layers.2.1.0.attn.attn.out_proj, backbone.layers.2.1.0.attn.dropout_layer, backbone.layers.2.1.0.ffn.dropout_layer, backbone.layers.2.1.1.attn.attn.out_proj, backbone.layers.2.1.1.attn.dropout_layer, backbone.layers.2.1.1.ffn.dropout_layer, backbone.layers.3.1.0.attn.attn.out_proj, backbone.layers.3.1.0.attn.dropout_layer, backbone.layers.3.1.0.ffn.dropout_layer, backbone.layers.3.1.1.attn.attn.out_proj, backbone.layers.3.1.1.attn.dropout_layer, backbone.layers.3.1.1.ffn.dropout_layer, data_preprocessor, decode_head.loss_decode
+10/07 10:18:32 - mmengine - WARNING - Unsupported operator aten::layer_norm encountered 30 time(s)
+10/07 10:18:32 - mmengine - WARNING - Unsupported operator aten::batch_norm encountered 5 time(s)
+10/07 10:18:32 - mmengine - WARNING - Unsupported operator aten::upsample_bilinear2d encountered 4 time(s)
+==============================
+Compute type: direct: randomly generate a picture
+Input shape: (256, 640)
+Flops: 9.141G
+Params: 13.679M
+==============================
+!!!Please be cautious if you use the results in papers. You may need to check if all ops are supported and verify that the flops computation is correct.
+
+============================================================
+MODEL: OCRNet-HRNet-W18
+CONFIG: projects/industrial_defect_seg/configs/ksdd2/ocrnet_hrnet_w18_ksdd2_20k.py
+============================================================
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/backbones/hrnet.py:318: UserWarning: DeprecationWarning: pretrained is deprecated, please use "init_cfg" instead
+  warnings.warn('DeprecationWarning: pretrained is deprecated, '
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/decode_heads/decode_head.py:120: UserWarning: For binary segmentation, we suggest using`out_channels = 1` to define the outputchannels of segmentor, and use `threshold`to convert `seg_logits` into a predictionapplying a threshold
+  warnings.warn('For binary segmentation, we suggest using'
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/builder.py:36: UserWarning: ``build_loss`` would be deprecated soon, please use ``mmseg.registry.MODELS.build()`` 
+  warnings.warn('``build_loss`` would be deprecated soon, please use '
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/losses/cross_entropy_loss.py:250: UserWarning: Default ``avg_non_ignore`` is False, if you would like to ignore the certain label and average loss over non-ignore labels, which is the same with PyTorch official cross_entropy, set ``avg_non_ignore=True``.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/root/autodl-tmp/mmsegmentation-1.2.2/tools/analysis_tools/get_flops.py", line 123, in <module>
+    main()
+  File "/root/autodl-tmp/mmsegmentation-1.2.2/tools/analysis_tools/get_flops.py", line 103, in main
+    result = inference(args, logger)
+  File "/root/autodl-tmp/mmsegmentation-1.2.2/tools/analysis_tools/get_flops.py", line 83, in inference
+    if cfg.model.decode_head.type in ['MaskFormerHead', 'Mask2FormerHead']:
+AttributeError: 'list' object has no attribute 'type'
+
+============================================================
+MODEL: BiSeNetV2
+CONFIG: projects/industrial_defect_seg/configs/ksdd2/bisenetv2_ksdd2_20k.py
+============================================================
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/decode_heads/decode_head.py:120: UserWarning: For binary segmentation, we suggest using`out_channels = 1` to define the outputchannels of segmentor, and use `threshold`to convert `seg_logits` into a predictionapplying a threshold
+  warnings.warn('For binary segmentation, we suggest using'
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/builder.py:36: UserWarning: ``build_loss`` would be deprecated soon, please use ``mmseg.registry.MODELS.build()`` 
+  warnings.warn('``build_loss`` would be deprecated soon, please use '
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/losses/cross_entropy_loss.py:250: UserWarning: Default ``avg_non_ignore`` is False, if you would like to ignore the certain label and average loss over non-ignore labels, which is the same with PyTorch official cross_entropy, set ``avg_non_ignore=True``.
+  warnings.warn(
+10/07 10:18:39 - mmengine - WARNING - Unsupported operator aten::max_pool2d encountered 1 time(s)
+10/07 10:18:39 - mmengine - WARNING - Unsupported operator aten::add encountered 10 time(s)
+10/07 10:18:39 - mmengine - WARNING - Unsupported operator aten::avg_pool2d encountered 1 time(s)
+10/07 10:18:39 - mmengine - WARNING - Unsupported operator aten::sigmoid encountered 2 time(s)
+10/07 10:18:39 - mmengine - WARNING - Unsupported operator aten::mul encountered 2 time(s)
+10/07 10:18:39 - mmengine - WARNING - Unsupported operator aten::feature_dropout encountered 1 time(s)
+10/07 10:18:39 - mmengine - WARNING - The following submodules of the model were never called during the trace of the graph. They may be unused, or they were accessed by direct calls to .forward() or via other python methods. In the latter case they will have zeros for statistics, though their statistics will still contribute to their parent calling module.
+data_preprocessor, decode_head.loss_decode
+10/07 10:18:39 - mmengine - WARNING - Unsupported operator aten::batch_norm encountered 54 time(s)
+10/07 10:18:39 - mmengine - WARNING - Unsupported operator aten::adaptive_avg_pool2d encountered 1 time(s)
+10/07 10:18:39 - mmengine - WARNING - Unsupported operator aten::upsample_bilinear2d encountered 2 time(s)
+==============================
+Compute type: direct: randomly generate a picture
+Input shape: (256, 640)
+Flops: 7.678G
+Params: 3.341M
+==============================
+!!!Please be cautious if you use the results in papers. You may need to check if all ops are supported and verify that the flops computation is correct.
+
+============================================================
+MODEL: UPerNet-Swin-T
+CONFIG: projects/industrial_defect_seg/configs/ksdd2/upernet_swin_t_ksdd2_20k.py
+============================================================
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/decode_heads/decode_head.py:120: UserWarning: For binary segmentation, we suggest using`out_channels = 1` to define the outputchannels of segmentor, and use `threshold`to convert `seg_logits` into a predictionapplying a threshold
+  warnings.warn('For binary segmentation, we suggest using'
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/builder.py:36: UserWarning: ``build_loss`` would be deprecated soon, please use ``mmseg.registry.MODELS.build()`` 
+  warnings.warn('``build_loss`` would be deprecated soon, please use '
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/losses/cross_entropy_loss.py:250: UserWarning: Default ``avg_non_ignore`` is False, if you would like to ignore the certain label and average loss over non-ignore labels, which is the same with PyTorch official cross_entropy, set ``avg_non_ignore=True``.
+  warnings.warn(
+10/07 10:18:44 - mmengine - WARNING - Unsupported operator aten::rsub encountered 24 time(s)
+10/07 10:18:44 - mmengine - WARNING - Unsupported operator aten::pad encountered 12 time(s)
+10/07 10:18:44 - mmengine - WARNING - Unsupported operator aten::mul encountered 24 time(s)
+10/07 10:18:44 - mmengine - WARNING - Unsupported operator aten::add encountered 57 time(s)
+10/07 10:18:44 - mmengine - WARNING - Unsupported operator aten::softmax encountered 12 time(s)
+10/07 10:18:44 - mmengine - WARNING - Unsupported operator aten::gelu encountered 12 time(s)
+10/07 10:18:44 - mmengine - WARNING - Unsupported operator aten::fill_ encountered 54 time(s)
+10/07 10:18:44 - mmengine - WARNING - Unsupported operator aten::sub encountered 18 time(s)
+10/07 10:18:44 - mmengine - WARNING - Unsupported operator aten::ne encountered 6 time(s)
+10/07 10:18:44 - mmengine - WARNING - Unsupported operator aten::im2col encountered 3 time(s)
+10/07 10:18:44 - mmengine - WARNING - Unsupported operator aten::feature_dropout encountered 1 time(s)
+10/07 10:18:44 - mmengine - WARNING - The following submodules of the model were never called during the trace of the graph. They may be unused, or they were accessed by direct calls to .forward() or via other python methods. In the latter case they will have zeros for statistics, though their statistics will still contribute to their parent calling module.
+backbone.patch_embed.adap_padding, backbone.stages.0.blocks.0.attn.drop, backbone.stages.0.blocks.0.ffn.dropout_layer, backbone.stages.0.blocks.1.attn.drop, backbone.stages.0.blocks.1.ffn.dropout_layer, backbone.stages.0.downsample.adap_padding, backbone.stages.1.blocks.0.attn.drop, backbone.stages.1.blocks.0.ffn.dropout_layer, backbone.stages.1.blocks.1.attn.drop, backbone.stages.1.blocks.1.ffn.dropout_layer, backbone.stages.1.downsample.adap_padding, backbone.stages.2.blocks.0.attn.drop, backbone.stages.2.blocks.0.ffn.dropout_layer, backbone.stages.2.blocks.1.attn.drop, backbone.stages.2.blocks.1.ffn.dropout_layer, backbone.stages.2.blocks.2.attn.drop, backbone.stages.2.blocks.2.ffn.dropout_layer, backbone.stages.2.blocks.3.attn.drop, backbone.stages.2.blocks.3.ffn.dropout_layer, backbone.stages.2.blocks.4.attn.drop, backbone.stages.2.blocks.4.ffn.dropout_layer, backbone.stages.2.blocks.5.attn.drop, backbone.stages.2.blocks.5.ffn.dropout_layer, backbone.stages.2.downsample.adap_padding, backbone.stages.3.blocks.0.attn.drop, backbone.stages.3.blocks.0.ffn.dropout_layer, backbone.stages.3.blocks.1.attn.drop, backbone.stages.3.blocks.1.ffn.dropout_layer, data_preprocessor, decode_head.loss_decode
+10/07 10:18:45 - mmengine - WARNING - Unsupported operator aten::layer_norm encountered 32 time(s)
+10/07 10:18:45 - mmengine - WARNING - Unsupported operator aten::batch_norm encountered 12 time(s)
+10/07 10:18:45 - mmengine - WARNING - Unsupported operator aten::adaptive_avg_pool2d encountered 4 time(s)
+10/07 10:18:45 - mmengine - WARNING - Unsupported operator aten::upsample_bilinear2d encountered 10 time(s)
+==============================
+Compute type: direct: randomly generate a picture
+Input shape: (256, 640)
+Flops: 0.148T
+Params: 58.942M
+==============================
+!!!Please be cautious if you use the results in papers. You may need to check if all ops are supported and verify that the flops computation is correct.
+
+============================================================
+MODEL: Ours
+CONFIG: projects/industrial_defect_seg/configs/ksdd2/segformer_mit-b0_dapr_frfn_pcgrc_g001_ksdd2_20k.py
+============================================================
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/decode_heads/decode_head.py:120: UserWarning: For binary segmentation, we suggest using`out_channels = 1` to define the outputchannels of segmentor, and use `threshold`to convert `seg_logits` into a predictionapplying a threshold
+  warnings.warn('For binary segmentation, we suggest using'
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/builder.py:36: UserWarning: ``build_loss`` would be deprecated soon, please use ``mmseg.registry.MODELS.build()`` 
+  warnings.warn('``build_loss`` would be deprecated soon, please use '
+/root/autodl-tmp/mmsegmentation-1.2.2/mmseg/models/losses/cross_entropy_loss.py:250: UserWarning: Default ``avg_non_ignore`` is False, if you would like to ignore the certain label and average loss over non-ignore labels, which is the same with PyTorch official cross_entropy, set ``avg_non_ignore=True``.
+  warnings.warn(
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::div encountered 17 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::mul encountered 55 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::unflatten encountered 8 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::softmax encountered 9 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::add encountered 23 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::gelu encountered 13 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::mean encountered 2 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::sub encountered 4 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::pow encountered 1 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::sqrt encountered 1 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::sigmoid encountered 2 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::feature_dropout encountered 2 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::log encountered 2 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::rsub encountered 3 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::neg encountered 1 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::abs encountered 2 time(s)
+10/07 10:18:49 - mmengine - WARNING - Unsupported operator aten::pad encountered 2 time(s)
+10/07 10:18:49 - mmengine - WARNING - The following submodules of the model were never called during the trace of the graph. They may be unused, or they were accessed by direct calls to .forward() or via other python methods. In the latter case they will have zeros for statistics, though their statistics will still contribute to their parent calling module.
+backbone.layers.0.1.0.attn.attn.out_proj, backbone.layers.0.1.0.attn.dropout_layer, backbone.layers.0.1.0.ffn.dropout_layer, backbone.layers.0.1.1.attn.attn.out_proj, backbone.layers.0.1.1.attn.dropout_layer, backbone.layers.0.1.1.ffn.dropout_layer, backbone.layers.1.1.0.attn.attn.out_proj, backbone.layers.1.1.0.attn.dropout_layer, backbone.layers.1.1.0.ffn.dropout_layer, backbone.layers.1.1.1.attn.attn.out_proj, backbone.layers.1.1.1.attn.dropout_layer, backbone.layers.1.1.1.ffn.dropout_layer, backbone.layers.2.1.0.attn.attn.out_proj, backbone.layers.2.1.0.attn.dropout_layer, backbone.layers.2.1.0.ffn.dropout_layer, backbone.layers.2.1.1.attn.attn.out_proj, backbone.layers.2.1.1.attn.dropout_layer, backbone.layers.2.1.1.ffn.dropout_layer, backbone.layers.3.1.0.attn.attn.out_proj, backbone.layers.3.1.0.attn.dropout_layer, backbone.layers.3.1.0.ffn.dropout_layer, backbone.layers.3.1.1.attn.attn.out_proj, backbone.layers.3.1.1.attn.dropout_layer, backbone.layers.3.1.1.ffn.dropout_layer, data_preprocessor, decode_head.loss_decode
+10/07 10:18:50 - mmengine - WARNING - Unsupported operator aten::layer_norm encountered 31 time(s)
+10/07 10:18:50 - mmengine - WARNING - Unsupported operator aten::batch_norm encountered 6 time(s)
+10/07 10:18:50 - mmengine - WARNING - Unsupported operator aten::upsample_bilinear2d encountered 4 time(s)
+10/07 10:18:50 - mmengine - WARNING - Unsupported operator aten::adaptive_avg_pool2d encountered 1 time(s)
+==============================
+Compute type: direct: randomly generate a picture
+Input shape: (256, 640)
+Flops: 20.161G
+Params: 5.251M
+==============================
+!!!Please be cautious if you use the results in papers. You may need to check if all ops are supported and verify that the flops computation is correct.

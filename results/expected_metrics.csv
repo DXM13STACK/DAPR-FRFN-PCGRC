@@ -1,0 +1,22 @@
+dataset,variant,config_relative_path,metric,reported_value
+KSDD2,Full,projects/industrial_defect_seg/configs/ksdd2/segformer_mit-b0_dapr_frfn_pcgrc_g001_ksdd2_20k.py,Defect IoU,73.84
+MTD,Full,projects/industrial_defect_seg/configs/mtd/segformer_mit-b0_dapr_frfn_pcgrc_g001_mtd_binary_20k_bs4.py,Defect IoU,77.53
+NEU-SEG,Full,projects/industrial_defect_seg/configs/neu/segformer_mit-b0_dapr_frfn_pcgrc_g001_neu_seg_20k.py,mIoU,87.20
+KSDD2,FRFN,projects/industrial_defect_seg/configs/ksdd2/segformer_mit-b0_frfn_ksdd2_20k.py,Defect IoU,72.49
+MTD,FRFN,projects/industrial_defect_seg/configs/mtd/segformer_mit-b0_frfn_mtd_binary_20k.py,Defect IoU,73.18
+NEU-SEG,FRFN,projects/industrial_defect_seg/configs/neu/segformer_mit-b0_frfn_neu_seg_20k.py,mIoU,87.15
+KSDD2,DAPR-FRFN,projects/industrial_defect_seg/configs/ksdd2/segformer_mit-b0_dapr_frfn_ksdd2_20k.py,Defect IoU,73.21
+MTD,DAPR-FRFN,projects/industrial_defect_seg/configs/mtd/segformer_mit-b0_dapr_frfn_mtd_binary_20k.py,Defect IoU,75.64
+NEU-SEG,DAPR-FRFN,projects/industrial_defect_seg/configs/neu/segformer_mit-b0_dapr_frfn_neu_seg_20k.py,mIoU,87.13
+KSDD2,NoStats,projects/industrial_defect_seg/configs/ksdd2/segformer_mit-b0_nostats_routing_frfn_ksdd2_20k.py,Defect IoU,69.68
+MTD,NoStats,projects/industrial_defect_seg/configs/mtd/segformer_mit-b0_nostats_routing_frfn_mtd_binary_20k_bs4.py,Defect IoU,75.02
+KSDD2,Mean-only,projects/industrial_defect_seg/configs/ksdd2/segformer_mit-b0_meanonly_dapr_frfn_ksdd2_20k.py,Defect IoU,68.24
+MTD,Mean-only,projects/industrial_defect_seg/configs/mtd/segformer_mit-b0_meanonly_dapr_frfn_mtd_binary_20k_bs4.py,Defect IoU,75.08
+KSDD2,Stats-CA,projects/industrial_defect_seg/configs/ksdd2/segformer_mit-b0_statsca_frfn_ksdd2_20k.py,Defect IoU,69.10
+MTD,Stats-CA,projects/industrial_defect_seg/configs/mtd/M1_statsca_mtd_bs4_seed42.py,Defect IoU,73.64
+KSDD2,Stats-CA+PConv,projects/industrial_defect_seg/configs/ksdd2/segformer_mit-b0_statsca_pconv_frfn_ksdd2_20k.py,Defect IoU,67.59
+MTD,Stats-CA+PConv,projects/industrial_defect_seg/configs/mtd/M2_statsca_pconv_mtd_bs4_seed42.py,Defect IoU,74.59
+KSDD2,Naive correction,projects/industrial_defect_seg/configs/ksdd2/segformer_mit-b0_dapr_frfn_naive_correction_ksdd2_20k_bs8_seed42.py,Defect IoU,67.83
+MTD,Naive correction,projects/industrial_defect_seg/configs/mtd/segformer_mit-b0_dapr_frfn_naive_correction_mtd_binary_20k_bs4.py,Defect IoU,72.51
+KSDD2,Scale-only correction,projects/industrial_defect_seg/configs/ksdd2/segformer_mit-b0_dapr_frfn_scale_only_correction_g001_ksdd2_20k_seed42.py,Defect IoU,72.29
+MTD,Scale-only correction,projects/industrial_defect_seg/configs/mtd/segformer_mit-b0_dapr_frfn_scale_only_correction_g001_mtd_binary_20k_bs4_seed42.py,Defect IoU,74.66

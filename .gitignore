@@ -1,0 +1,39 @@
+# Raw datasets and generated data
+data/**
+!data/KSDD2/
+!data/KSDD2/splits/
+!data/KSDD2/splits/*.txt
+!data/NEU_Seg/
+!data/NEU_Seg/splits/
+!data/NEU_Seg/splits/*.txt
+!data/MTD_binary/
+!data/MTD_binary/splits/
+!data/MTD_binary/splits/*.txt
+
+# Model checkpoints and experiment outputs
+*.pth
+*.pt
+*.ckpt
+work_dirs/
+outputs/
+predictions/
+
+# Python and editor files
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
