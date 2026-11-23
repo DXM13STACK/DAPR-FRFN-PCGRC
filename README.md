@@ -1,6 +1,6 @@
 # DAPR-FRFN and PCGRC for Industrial Surface Defect Segmentation
 
-This repository contains the implementation used for the manuscript. It is based on MMSegmentation 1.2.2 and includes the proposed model, controlled ablation variants, dataset definitions, fixed data splits, experiment configurations, and analysis scripts.
+This repository contains the implementation accompanying the manuscript **“Distribution-Aware Feature Refinement and Prediction-Guided Structural Correction for Industrial Surface Defect Segmentation.”** It is based on MMSegmentation 1.2.2 and includes the proposed model, controlled ablation variants, dataset definitions, fixed data splits, experiment configurations, and analysis scripts.
 
 Model checkpoints are not distributed. All experiments can be trained from the released configurations, and the standard MMSegmentation evaluation entry point can be used with the checkpoint produced by each training run.
 
@@ -22,7 +22,7 @@ Model checkpoints are not distributed. All experiments can be trained from the r
 - `results/expected_metrics.csv`: configuration-to-result mapping for the manuscript experiments.
 - `docs/REPRODUCTION.md`: environment, data, training, and evaluation instructions.
 - `docs/EXPERIMENTS.md`: experiment and configuration index.
-- `RELEASE_CHECKLIST.md`: the remaining pre-release verification step.
+- `NOTICE.md`: upstream attribution and third-party notices.
 
 ## Quick start
 
@@ -66,6 +66,10 @@ Some upstream baseline and backbone configurations refer to official OpenMMLab p
 
 Trained checkpoints are intentionally not included in the public repository. This applies to the main model and all ablation experiments. The repository instead provides the implementation, fixed configurations, data splits, seeds, training schedules, evaluation entry point, and reported metrics required to reproduce the experiments.
 
+## Citation
+
+If you use this repository, please cite the associated manuscript. Machine-readable citation metadata are provided in `CITATION.cff`.
+
 ## License and attribution
 
-The repository follows the upstream MMSegmentation Apache 2.0 license. See `NOTICE.md` and `CITATION.cff` for attribution and citation information.
+This repository is released under the Apache License 2.0 and retains the attribution required by the upstream projects. See `LICENSE`, `NOTICE.md`, and `CITATION.cff`.
